@@ -1,0 +1,302 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: black;
+    background-image: url(images/vegetables-set-left-black-slate.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    background: linear-gradient(to bottom, #FFA500, #FF5733);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+nav a:hover {
+    filter: drop-shadow( 0 5px 5px #b9541d);
+}
+
+nav a.main {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav li.main-on-page{
+    color: #333333;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    margin-top: 64px;
+}
+
+.main-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.main-image img:hover {
+    filter: brightness(75%);
+}
+
+.main-image p {
+    margin-top: 10px;
+}
+
+aside {
+    width: 200px;
+    background-color: #FF5733;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    top: 64px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+aside h2 {
+    color: white;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-top: 10px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+aside a:hover {
+    filter: drop-shadow( 0 5px 5px #b9541d);
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    margin-left: 240px;
+}
+
+.main-section {
+    margin-left: 20px;
+    flex: 1;
+    padding: 20px;
+}
+
+.main-section p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section h1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px -1px 0 #FF5733, 1px -1px 0 #FF5733, -1px 1px 0 #FF5733, 1px 1px 0 #FF5733;
+}
+
+section h1 {
+    text-align:center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+section h2, h3 {
+    color: white;
+}
+
+section p {
+    font-size: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #FF5733;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-left: 200px;
+    right: 0;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mainfoot {
+    margin-left: 0;
+    left: 0;
+}
+
+.on-page {
+    color: #333333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.recipe {
+    display: flex;
+}
+
+.photo {
+    flex: 1;
+}
+
+.photo img { 
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+}
+
+.description {
+    flex: 1;
+}
+
+.description p {
+        background-color: lightgray;
+    max-width: 600px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightgray;
+}
+
+th, td {
+    border: 0;
+    padding: 6px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.recipe-steps p {
+    max-width: 1000px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid transparent;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 844px) {
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    section {
+        margin-left: 20px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+    
+    section h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+    
+    aside {
+        display: none;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .description {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    .recipe {
+        flex-direction: column;
+    }
+
+    table {
+        max-width: 400px;
+    }
+}
